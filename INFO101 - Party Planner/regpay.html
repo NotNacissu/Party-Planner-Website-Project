@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+
+<html>
+<!-- Contains metadata about the webpage (eg. The page title, external CSS and javascript file.)-->
+<head>
+    <!-- Title that shows up in the tab -->
+    <title>Registration & Payment - CelebrateMasters</title>
+    <!-- Include an external CSS stylesheet for styling the webpage -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<!-- All content visible on the webpage will be inside the body tag below-->
+<body>
+    <!-- Header shows the stuff on the top of the page (navigation menu, logo, etc.)-->
+    <header>
+        <!-- Website navigation menu -->
+        <nav class="navbar">
+            <div class="container">
+                <!-- Website logo linking to the homepage -->
+                <a class="logo" href="index.html">CelebrateMasters</a>
+                <!-- List of navigation links -->
+                <ul class="nav-links">
+				<!-- Contains the links to all of the different pages. "href" is the html page it directs to. These are clickable links. -->
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="regpay.html">Register & Pay</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+	<!-- Main content section. Contains the "main" content of what is on the page. -->
+    <main>
+		<!-- Section contains both the payment and registration form. This section has an id which can manipulate both of the forms. -->
+        <section id="registration-payment">
+            <!-- First <div> is a container for both forms.-->
+            <div class="container">
+                <!-- Registration Form <div>. This "divides" the registration form elements from the payment form elements.  -->
+                <div class="registration-form">
+					<!-- Header of form -->
+                    <h2>Registration Form</h2>
+					<!-- This is the actual  -->
+                    <form id="registrationForm">
+                        <!-- Registration form fields -->
+                        <!-- <label> is text above the input field -->
+						<!-- User's name -->
+                        <label for="name">Name:</label>
+						<!-- Actual "input" box for user to enter text in. The type of input, id and name are declared here as well -->
+                        <input type="text" id="name" name="name" required>
+						
+						<!-- User's email address -->
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+
+						<!-- User's mobile number -->
+                        <label for="mobile">Mobile Phone:</label>
+                        <input type="text" id="mobile" name="mobile" required>
+
+						<!-- User's street address -->
+                        <label for="address">Address:</label>
+                        <input type="text" id="address" name="address" required>
+
+                        <!-- Add more registration form fields as needed -->
+						<!-- button to submit the form. The "onclick" runs the function described (in this case registerUser()) from javascript when the button is pressed. -->
+                        <button type="submit" onclick="registerUser()">Register</button>
+                    </form>
+                </div>
+                <!-- Payment Form -->
+                <div class="payment-form">
+                    <h2>Payment Form</h2>
+                    <form id="paymentForm">
+                        <!-- Payment form fields -->
+						<!-- Date of party -->
+                        <label for="partyDate">Party Date:</label>
+                        <input type="date" id="partyDate" name="partyDate" required>
+						<!-- Type of party -->
+                        <label for="partyType">Party Type:</label>
+                        <!-- <select> element makes a dropdown list. you can pick one of the options in the <options> element-->
+                        <select id="partyService" name="partyType" required>
+                            <option>Magical Birthday Party</option>
+                            <option>Clown Fiesta</option>
+                            <option>Princess Tea Party</option>
+                            <!-- Add more types if needed -->
+                        </select>
+						<!-- Party venue location -->
+                        <label for="partyVenue">Party Venue:</label>
+                        <select id="partyService" name="partyVenue" required>
+                            <option>Auckland Party Palace - Auckland</option>
+                            <option>Starry Skies Park - Christchurch</option>
+                            <option>Seaside Oasis Villa - Napier</option>
+                            <!-- Add more options if needed -->
+                        </select>
+
+						<!-- Start and end of party -->
+                        <div class="time-fields">
+                            <!-- Start and end time fields -->
+                            <div class="time-field">
+                                <label for="startTime">Start Time:</label>
+                                <input type="time" id="startTime" name="startTime" required>
+                            </div>
+                            <div class="time-field">
+                                <label for="endTime">End Time:</label>
+                                <input type="time" id="endTime" name="endTime" required>
+                            </div>
+                        </div>
+
+						<!-- Card number -->
+                        <label for="cardNumber">Card Number:</label>
+                        <input type="text" id="cardNumber" name="cardNumber" required>
+
+						<!-- Expiry date of card -->
+                        <label for="expiryDate">Expiry Date:</label>
+                        <input type="date" id="expiryDate" name="expiryDate" required>
+
+						<!-- Submit button to process payment -->
+                        <button type="submit" onclick="processPayment()">Pay Now</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="contact-info">
+            <!-- Contact email information. Email can be clicked on and it will open the user's default email client with recipient's email address pre-filled  -->
+            <p>Contact us at: <a href="mailto:contact@celebratemastersevents.com">contact@celebratemasters.com</a></p>
+        </div>
+        <!-- Copyright notice -->
+        <p>&copy; 2023 CelebrateMasters</p>
+    </footer>
+</body>
+<!-- Include an external JavaScript file for scripting functionality -->
+<script src="myscripts.js"></script>
+</html>

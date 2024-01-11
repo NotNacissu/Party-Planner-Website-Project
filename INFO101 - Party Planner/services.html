@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<!-- Contains metadata about the webpage (eg. The page title, external CSS and javascript file.)-->
+<head>
+    <!-- Title that shows up in the tab-->
+    <title>Services - CelebrateMasters</title>
+    <!-- Include an external CSS stylesheet for styling the webpage -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+    <!-- Include an external JavaScript file for interactive functionality -->
+    <script src="myscripts.js"></script>
+</head>
+<!-- All content visible on the webpage will be inside the body tag below-->
+<body>
+    <!-- Header section containing the website's navigation -->
+    <header>
+        <!-- <nav> element provides navigation links -->
+        <nav class="navbar">
+            <div class="container">
+                <!-- Website logo linking to the homepage -->
+                <a class="logo" href="index.html">CelebrateMasters</a>
+                <!-- List of navigation links -->
+                <ul class="nav-links">
+                    <!-- Contains the links to all of the different pages. "href" is the html page it directs to.-->
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="regpay.html">Register & Pay</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    
+    <!-- Main content section. Contains the "main" content of what is on the page. -->
+    <main>
+        <!-- Services section. each <div> "divides" elements into seperate groups. I can then give those groups different classes if needed.-->
+        <section id="services">
+            <div class="service">
+                <!-- Service title -->
+                <h2>Magical Birthday Party</h2>
+                <!-- Service description -->
+                <p>Create a magical experience for your child's birthday with our enchanting magician.</p>
+                <p>This service includes:</p>
+                <!-- list Service details -->
+                <p2> A 30-minute magician performance <br> Balloon animals for all children <br> Magic show with audience participation <br><br></p2>
+                <!-- Image illustrating the service (Image source - https://stock.adobe.com/nz/search/images?k=magician&asset_id=320601921)-->
+                <img src="Photo2.jpg" alt="Happy Magician" width="250" height="150">
+                <!-- Pricing information -->
+                <h3>Price: $249</h3>
+            </div>
+
+            <div class="service">
+                <!-- Service title -->
+                <h2>Clown Fiesta</h2>
+                <!-- Service description -->
+                <p>Get ready for giggles and fun with our entertaining clown performances.</p>
+                <p>This service includes:</p>
+                <!-- list Service details -->
+                <p2> A 45-minute clown performance <br> Face painting for all children <br> Balloon animals <br><br></p2>
+                <!-- Image illustrating the service (Image source - https://www.123rf.com/photo_15478145_happy-kids-with-clown-on-birthday-party.html) -->
+                <img src="Photo3.jpg" alt="Funny Clown at Birthday Party" width="250" height="150">
+                <!-- Pricing information -->
+                <h3>Price: $299</h3>
+            </div>
+
+            <div class="service">
+                <!-- Service title -->
+                <h2>Princess Tea Party</h2>
+                <!-- Service description -->
+                <p>Make your little one feel like royalty with a princess-themed tea party.</p>
+                <p>This service includes:</p>
+                <!-- list Service details -->
+                <p2> A Princess tea party setup with decorations <br> A Costumed princess host <br> Tea, snacks, and desserts <br> Craft activities for children <br><br></2>
+                <!-- Image illustrating the service (Image source - https://www.istockphoto.com/photo/birthday-girl-celebrating-with-friends-gm174829191-23325703)-->
+                <img src="Photo4.jpg" alt="Birthday Girl with Friends" width="250" height="150">
+                <!-- Pricing information -->
+                <h3>Price: $349</h3>
+            </div>
+
+            <!-- Add more service sections as needed -->
+        </section>
+
+        <!-- Venues section to show what venues can be booked -->
+        <section id="venues">
+            <ul>
+                <!-- The venues' elements are grouped in seperate lists (<li>). -->
+                <li>
+                    <!-- Big header at the top to tell the user what the section is about-->
+                    <h2>Available Venues</h2>
+                </li>
+                <li>
+                    <!-- Header of the Venue names -->
+                    <h3>Venues Wellington - Wellington</h3>
+                    <!-- Venue address (I used a place called "Venues Wellington" for this address.) -->
+                    <p><strong>Address:</strong> 111 Wakefield Street, Wellington</p>
+                    <!-- Google Maps embed for location. Source contains a pin on the location. -->
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d397.0194996768683!2d174.77702097641875!3d-41.289452722845056!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d38afd6c8548ae5%3A0x5064dba1822180a9!2sVenues%20Wellington!5e0!3m2!1sen!2snz!4v1696514630895!5m2!1sen!2snz"
+                        width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </li>
+                <li>
+                    <h3>Starry Skies Park - Christchurch</h3>
+                    <!-- Venue address (For this address, I used a place called Party World (NZ) Ltd which is a location in Christchurch) -->
+                    <p><strong>Address:</strong> 1063 Ferry Road, Christchurch</p>
+                    <!-- Google Maps embed for location. Source contains a pin on the location.-->
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d429.8024876867042!2d172.70407160802336!3d-43.55748602805231!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d3188277817a15f%3A0x68b01e0f4c4771d9!2sParty%20World%20(NZ)%20Ltd!5e0!3m2!1sen!2snz!4v1696514422851!5m2!1sen!2snz"
+                        width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </li>
+                <li>
+                    <h3>Napier Party Bars - Napier</h3>
+                    <!-- Venue address (For this address, I used a place called "Napier Party Bars NightClub" as a placeholder.) -->
+                    <p><strong>Address:</strong> 45 West Quay, Napier</p>
+                    <!-- Google Maps embed for location. Source contains a pin on the location. -->
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d384.91748700076107!2d176.8936440246605!3d-39.48423895971772!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d69b2d71edf742b%3A0x5971b92d8adf3ff0!2sNapier%20Party%20Bars%20Nightclub!5e0!3m2!1sen!2snz!4v1696514069177!5m2!1sen!2snz" 
+                        width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- Footer section for things at the bottom of the page-->
+    <footer>
+        <div class="contact-info">
+            <!-- Contact email information. Email can be clicked on and it will open the user's default email client with recipient's email address pre-filled  -->
+            <p>Contact us at: <a href="mailto:contact@celebratemastersevents.com">contact@celebratemasters.com</a></p>
+        </div>
+        <!-- Copyright notice -->
+        <p>&copy; 2023 CelebrateMasters</p>
+    </footer>
+</body>
+</html>

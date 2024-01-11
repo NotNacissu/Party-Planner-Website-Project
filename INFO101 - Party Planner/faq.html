@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html><!-- Do NOT put any content outside of the HTML tags-->
+<!-- Contains metadata about the webpage (eg. The page title, external CSS and javascript file.)-->
+<head>
+	<!-- Title that shows up in the tab-->
+	<title>FAQ - CelebrateMasters</title>
+	<link rel= "stylesheet" type="text/css" href="style.css">
+</head>
+	
+    <!-- All content visible on the webpage will be inside the body tag below-->
+	<body> 
+    <!-- Header section containing the website's navigation -->
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <!-- Website logo linking to the homepage -->
+                <a class="logo" href="index.html">CelebrateMasters</a>
+                <!-- List of navigation links -->
+                <ul class="nav-links">
+					<!-- Contains the links to all of the different pages. "href" is the html page it directs to.-->
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="regpay.html">Register & Pay</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+	<!-- Main content section. Contains the "main" content of what is on the page. -->
+	<main> 
+		<!-- Frequently asked questions section -->
+		<section id="faq">
+			<!-- Header to tell user what page is about -->
+			<h2>Frequently Asked Questions</h2>
+			
+
+			<!-- Commonly asked questions with answers. each of the <details> elements is an individual question and answer-->
+			<details>
+				<!-- <summary> element used in conjunction with <details> element to create an interactive widget that can be toggled open and closed -->
+				<summary>What ages are appropriate for your parties?</summary>
+				<!-- Defines a paragraph to provide the answer. Shows after summary has been clicked. -->
+				<p>Our parties are suitable for children of all ages, from toddlers to teenagers.</p>
+			</details>
+	
+			<details>
+				<summary>How many children can be invited to a party?</summary>
+				<p>We can accommodate parties of various sizes. Please contact us via email or phone to discuss your specific requirements.</p>
+			</details>
+	
+			<details>
+				<summary>What if plans change?</summary>
+				<p>If you need to reschedule or cancel a party, please contact us as soon as possible. We'll work with you to find a suitable solution.</p>
+			</details>
+	
+			<details>
+				<summary>Is coffee available for adults?</summary>
+				<p>Yes, we offer coffee and refreshments for adults attending the party.</p>
+			</details>
+
+			<details>
+				<summary>What payment methods do you accept?</summary>
+				<p>We accept payments via credit cards, PayPal, and bank transfers.</p>
+			</details>
+			
+			<details>
+				<summary>What is your cancellation policy?</summary>
+				<p>If you need to cancel an event, please inform us at least 1 week in advance for a full refund. Cancellation policies may vary for different types of events.</p>
+			</details>
+
+			<details>
+				<summary>How far in advance should I book your services?</summary>
+				<p>We recommend booking our services at least 1 to 3 months in advance to ensure availability, especially for popular event dates.</p>
+			</details>
+
+			<details>
+				<summary>Can I customize the decorations for my event?</summary>
+				<p>Absolutely! We work closely with our clients to create a customized decor plan that matches their preferences.</p>
+			</details>
+
+			<details>
+				<summary>Is parking available at your venue?</summary>
+				<p>Yes, we provide ample parking facilities for our guests. Parking details will be provided upon confirmation of your event booking.</p>
+			</details>
+
+			<details>
+				<summary>Can I bring my own entertainment for an event?</summary>
+				<p>You are welcome to bring your own entertainment, such as DJs or live bands, with prior arrangements.</p>
+			</details>
+
+			<details>
+				<summary>Do you offer special accommodations for dietary restrictions?</summary>
+				<p>Yes, we can accommodate various dietary restrictions and preferences. Please let us know in advance, and we'll work with our catering team to ensure that all your guests' needs are met.</p>
+			</details>
+	
+			<!-- Add more FAQ items as needed -->
+
+
+
+            <!-- Button to open a contact modal -->
+            <h2>Have any Questions or Feedback?</h2>
+			<!-- Will run a javascript function to open a window for filling in a form. -->
+            <button id="myBtn" class="custom-button">Click here!</button>
+
+            <!-- Modal for users to ask questions that have not been answered -->
+            <div id="myModal" class="modal">
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <!-- Close button for the modal. this is the "x" buttn in the top right -->
+                    <span class="close">&times;</span>
+                    <h2>Contact Us</h2>
+                    <!-- Contact form that shows in the modal -->
+                    <form id="contact-form">
+						<!-- name of user -->
+                        <label for="name">Name:</label>
+						<!-- Actual "input" box for user to enter text in. The type of input, id and name are declared here as well -->
+                        <input type="text" id="name" name="name" required>
+						<!-- email of user -->
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+						<!-- message to send -->
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="4" required></textarea>
+						<!-- Button to actually submit form when pressed. Will run the code in the javascript when pressed. -->
+                        <button type="submit" class="custom-button" id="submitButton">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer section -->
+    <footer>
+        <div class="contact-info">
+            <!-- Contact email information. Email can be clicked on and it will open the user's default email client with recipient's email address pre-filled  -->
+            <p>Contact us at: <a href="mailto:contact@celebratemastersevents.com">contact@celebratemasters.com</a></p>
+        </div>
+        <!-- Copyright information -->
+        <p>&copy; 2023 CelebrateMasters</p>
+    </footer>
+</body>
+<!-- Include JavaScript file -->
+<script src="myscripts.js"></script>
+</html>
